@@ -1,0 +1,70 @@
+:root {
+	--my-color-light: #5E6569;
+	--red: #df301f;
+	--yellow: #fdcf5a;
+	--black: #000000;
+	--leg-w: 10px;
+	--leg-h: 100px;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	width: 500px;
+	height: 500px;
+	background-image: url(./pict.jpg);
+	opacity: .5;
+}
+
+.legs {
+	border: 1px solid var(--black);
+	background-color: var(--my-color-light);
+}
+
+
+.legs-layer0 {
+	width: 10px;
+	height: 100px;
+	transform: translate(40px, 20px);
+}
+
+.layer0-leg {}
+
+.legs-layer1 {}
+
+.layer1-leg {}
+
+.legs-layer2 {}
+
+.layer2-leg {}
+
+.hands {
+
+	&_left {}
+
+	&_right {}
+}
+
+.base {}
+
+.base-base {}
+
+.base-main {}
+
+.base-head {}
+
+.base-screen {}
+
+.base-eye {}
+
+.base-unicorn {}
+
+.unicorn-h {}
+
+.unicorn-w {}
+
+.unicorn-top {}

@@ -1,0 +1,60 @@
+:root {
+	--red: #ff0000;
+	--box-w: 150px;
+	--box-h: 200px;
+	--circ: 220px;
+	--bottom-shift: 150px;
+	--angle: 47deg;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+.heart {
+	width: 512px;
+	height: 512px;
+	position: relative;
+}
+
+
+.box-left,
+.box-right {
+	width: var(--box-w);
+	height: var(--box-h);
+	background: var(--red);
+	position: absolute;
+	bottom: var(--bottom-shift);
+
+}
+
+.box-left {
+	transform-origin: left bottom;
+	transform: rotate(calc(var(--angle)*-1));
+	left: 50%;
+}
+
+.box-right {
+	transform-origin: right bottom;
+	transform: rotate(calc(var(--angle)*1));
+	right: 50%;
+}
+
+
+.circle-left,
+.circle-right {
+	position: relative;
+	width: var(--circ);
+	height: var(--circ);
+	background: var(--red);
+	top: calc(var(--circ)/2 * -1);
+	border-radius: 50%;
+}
+
+
+
+.circle-right {
+	right: calc(var(--circ) - var(--box-w));
+}
